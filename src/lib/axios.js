@@ -1,10 +1,12 @@
 import axios from "axios";
 
-export const axiosInstance = axios.create({
-  baseURL: "https://tunibackend.onrender.com/api", // always backend URL
-  withCredentials: true, // only needed if using cookies
-});
+// Use environment variable for API URL
+const API_URL = import.meta.env.VITE_API_URL || "https://tunibackend.onrender.com/api";
 
-axiosInstance.get("/user/profile")
-  .then(res => console.log(res.data))
-  .catch(err => console.error(err));
+export const axiosInstance = axios.create({
+  baseURL: API_URL,
+  withCredentials: true,
+  headers: {
+    'Content-Type': 'application/json',
+  }
+});
