@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Red background (Tunisian flag red) -->
+  <rect width="200" height="200" rx="20" fill="#CE1126"/>
+  
+  <!-- White circle background for icon -->
+  <circle cx="100" cy="100" r="85" fill="#FFFFFF"/>
+  
+  <!-- Chat bubble with Tunisian star -->
+  <g transform="translate(50, 40)">
+    <!-- Chat bubble shape -->
+    <path d="M10,0 Q0,0 0,10 L0,70 Q0,80 10,80 L70,80 Q80,80 80,70 L80,10 Q80,0 70,0 Z" 
+          fill="#CE1126" stroke="#CE1126" stroke-width="1"/>
+    
+    <!-- Chat bubble tail -->
+    <polygon points="70,80 85,95 75,80" fill="#CE1126"/>
+    
+    <!-- White text area inside bubble -->
+    <rect x="8" y="8" width="64" height="64" rx="4" fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- Star (from Tunisian flag) -->
+    <g transform="translate(40, 35)">
+      <polygon points="0,-15 4,-4 15,-4 6,4 10,19 0,10 -10,19 -6,4 -15,-4 -4,-4" fill="#CE1126"/>
+    </g>
+  </g>
+  
+  <!-- Decorative circles -->
+  <circle cx="160" cy="60" r="8" fill="#CE1126" opacity="0.5"/>
+  <circle cx="30" cy="150" r="6" fill="#CE1126" opacity="0.5"/>
+</svg>

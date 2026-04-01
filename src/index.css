@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tunisian Design Elements */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gradient backgrounds */
+.bg-tunisian-gradient {
+  background: linear-gradient(135deg, #CE1126 0%, #1a1a2e 100%);
+}
+
+.bg-red-gradient {
+  background: linear-gradient(135deg, #CE1126 0%, #E63946 100%);
+}
+
+.bg-white-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F0F0 100%);
+}
+
+/* Tunisian pattern background */
+.pattern-tunisian {
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(206, 17, 38, 0.05) 35px, rgba(206, 17, 38, 0.05) 70px),
+    repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(206, 17, 38, 0.05) 35px, rgba(206, 17, 38, 0.05) 70px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CE1126;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a50d1f;
+}
+
+/* Smooth animations */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Navbar styling */
+.navbar-tunisian {
+  background: linear-gradient(90deg, #CE1126 0%, #E63946 100%);
+  border-bottom: 3px solid #FFFFFF;
+  box-shadow: 0 4px 12px rgba(206, 17, 38, 0.15);
+}
+
+/* Chat messages styling */
+.message-sent {
+  background: linear-gradient(135deg, #CE1126 0%, #E63946 100%);
+  border-radius: 12px 2px 12px 12px;
+}
+
+.message-received {
+  background: linear-gradient(135deg, #F0F0F0 0%, #FFFFFF 100%);
+  border-radius: 2px 12px 12px 12px;
+  border-left: 3px solid #CE1126;
+}
